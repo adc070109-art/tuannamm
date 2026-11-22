@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sana, Yıldızların Altında ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="sky"></div>
+
+    <nav>
+        <span>✦ BİZİM EVRENİMİZ</span>
+    </nav>
+
+    <!-- ANA SAYFA -->
+    <section class="hero">
+        <div class="moon"></div>
+
+        <p class="subtitle">BİRLİKTE BİRİKTİRDİĞİMİZ ANILAR</p>
+
+        <h1>Birlikte yaşlanacağımız<br>
+            <em>güzel günlere.</em>
+        </h1>
+
+        <p class="description">
+            Ne kadar yıldız varsa, hepsinden daha güzel bir şey var hayatımda.<br>
+            O da sensin.
+        </p>
+
+        <a href="#mektup" class="main-button">Evrenimize gir ↓</a>
+    </section>
+
+    <!-- GİZLİ MEKTUP -->
+    <section id="mektup" class="section">
+        <p class="subtitle">01 · KÜÇÜK BİR MESAJ</p>
+        <h2>ZARFA<br><em>DOKUN</em></h2>
+
+        <div class="envelope" id="envelope">
+            <div class="flap"></div>
+            <span>♥</span>
+        </div>
+
+        
+        <div class="letter hidden" id="letter">
+            <h3>Tuannam,</h3>
+
+            <p>
+                Hayatıma girdiğinden beri sıradan günlerin bile
+                güzel bir tarafı var.
+            </p>
+
+            <p>
+                Sadece küçücük bir mesajın,Gülüşün,
+                 sadece var olduğunu bilmek
+                bütün günümü şekillendiriyor.
+            </p>
+
+            <p>
+                Seninle biriktirdiğim her anı benim için
+                çok kıymetli.
+            </p>
+
+            <p>
+                İyi ki varsın. İyi ki yollarımız kesişmiş.
+                Seni çok seviyorum. ❤️
+            </p>
+
+            
+        </div>
+    </section>
+
+    <!-- ANILAR -->
+    <section class="section">
+        <p class="subtitle">02 · EN GÜZEL ANILARIMIZ</p>
+        <h2>Asla unutmak istemeyeceğimiz<br><em>Anılarımız.</em></h2>
+
+        <div class="memory-container">
+
+            <div class="memory-card">
+                <img src="ilk.jpeg" alt="İlk Buluşmamız">
+                <h3>Hayatımın En Güzel Günü</h3>
+                <p>Keşke hiç bitmeseydi dediğim gün </p>
+            </div>
+
+            <div class="memory-card">
+                <img src="hehe.jpeg" alt="Başlangıcımız">
+                <h3>21 Mart,Hatunum olduğunu ilan ettiğim gün</h3>
+                <p>Şimdiye kadar ağzımdan çıkan en güzel cümle</p>
+            </div>
+
+            <div class="memory-card">
+                <img src="hedi.jpeg" alt="İlk hediyelerimiz">
+                <h3>Kendimden daha iyi baktığım hediyen</h3>
+                <p>En değer verdiğim</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOTOĞRAF GALERİSİ -->
+    <section class="section">
+        <p class="subtitle">03 · BİZİM FOTOĞRAFLARIMIZ</p>
+        <h2>Bir bakışta <em>bin anı.</em></h2>
+
+        <div class="gallery">
+            <img src="ani1.jpeg" alt="Anımız">
+            <img src="an2i.jpeg" alt="Anımız">
+            <img src="ani3.jpeg" alt="Anımız">
+        </div>
+    </section>
+
+    <!-- YILDIZ MESAJLARI -->
+    <section class="section">
+        <p class="subtitle">04 · SANA BAZI MESAJLARIM</p>
+        <h2>Yıldızlara <em>dokun.</em></h2>
+
+        <p class="description">
+            Her yıldızın içinde sana söylemek istediğim bir şey var.
+        </p>
+
+        <div class="stars">
+            <button onclick="showMessage(0)">✦</button>
+            <button onclick="showMessage(1)">✦</button>
+            <button onclick="showMessage(2)">✦</button>
+            <button onclick="showMessage(3)">✦</button>
+            <button onclick="showMessage(4)">✦</button>
+            <button onclick="showMessage(5)">✦</button>
+        </div>
+
+        
+    </section>
+
+    <!-- MİNİ OYUN -->
+    <section class="section">
+        <p class="subtitle">05 · KÜÇÜK BİR TEST</p>
+        <h2>Bakalım <em>ne kadar hatırlıyorsun?</em></h2>
+
+        <div class="quiz">
+            <h3 id="question">Bizim ilişkimiz hangi gün başladı?</h3>
+
+            <button onclick="answer(0)">14 Şubat</button>
+            <button onclick="answer(1)">21 Mart</button>
+            <button onclick="answer(2)">1 Nisan</button>
+
+            <p id="result"></p>
+            <button id="next" class="hidden" onclick="nextQuestion()">Sonraki soru →</button>
+        </div>
+    </section>
+
+    <!-- BÜYÜK FİNAL -->
+    <section class="section final">
+        <p class="subtitle">SON BİR ŞEY DAHA</p>
+
+        <h2>Bu evrenin en güzel<br>
+            <em>tesadüfü sensin.</em>
+        </h2>
+
+        <p class="description">
+            Son sürprizi açmak için yıldıza dokun.
+        </p>
+
+        <button class="final-star" onclick="finalSurprise()">✦</button>
+
+        <div id="finalMessage" class="hidden">
+            <h2>İyi ki benimlesin. ❤️</h2>
+
+            <p>
+                Bu küçük site biter ama seninle
+                biriktireceğimiz anılar bitmesin.
+            </p>
+
+            <h2>SONSUZA DEK, BİZ. ❤️</h2>
+        </div>
+    </section>
+
+    <footer>
+        Gökyüzü kocaman ama benim en sevdiğim yer senin yanın. ♡
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
